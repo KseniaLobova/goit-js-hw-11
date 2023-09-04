@@ -92,8 +92,9 @@ async function handlerMoreImg() {
   const inputValue = inputEl.value.trim
   
  try{
-   const response = await serviceValue(page,inputValue);
-    gallery.insertAdjacentElement("beforeend",creatMarkup(response)) 
+   const response = await serviceValue(page, inputValue);
+  
+   gallery.insertAdjacentElement("beforeend", creatMarkup(response));
     // gallery.innerHTML = creatMarkup(response)
   }
   
