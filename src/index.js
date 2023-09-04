@@ -1,5 +1,5 @@
 import axios from "axios";
-const axios = require('axios')
+
 import Notiflix from 'notiflix';
 
 // // Описаний в документації
@@ -65,8 +65,7 @@ async function serviceValue(currentPage="1",value) {
 
 
 function creatMarkup(response) {
-  return response.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
-    `<div class="photo-card">
+ return response.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `<div class="photo-card">
   <img src="${webformatURL}" alt="${tags}" loading="lazy" />
   <div class="info">
     <p class="info-item">
